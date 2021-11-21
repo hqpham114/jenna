@@ -20,6 +20,11 @@ function html(cb){
     cb();
   }
 
+  function img(cb){
+    src("src/img/*")
+    .pipe(dest("dist/img"))
+    cb();
+  }
 
 function js(cb){
     src("src/js/*.js")
@@ -33,6 +38,7 @@ function js(cb){
     cb();
   }
 
+  
 
 
   function watcher(cb){
@@ -40,6 +46,7 @@ function js(cb){
     watch("src/js/*.js").on('change', series(js, browserSync.reload));
     watch("src/css/*.css").on('change', series(css, browserSync.reload));
     watch("src/fonts/*").on('change', series(fonts, browserSync.reload));
+    watch("src/img/*").on('change', series(img, browserSync.reload));
 
     cb();
   }
@@ -59,4 +66,4 @@ function js(cb){
 //   }
 
   
-  exports.default = series(css,html, watcher,server, fonts, js);
+  exports.default = series(css,html, img, watcher,server, fonts, js);
