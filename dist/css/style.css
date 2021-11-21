@@ -31,6 +31,42 @@ section{
 
 }
 
+section.s2{
+    background-color:#c5c5c5 ;
+}
+
+section.s2 .square{
+    background-color: #d6ac35;
+}
+
+section.s2 .circle{
+    background-color:  #be3c52;
+}
+
+section.s3{
+    background-color:#292121 ;
+}
+
+section.s3 .square{
+    background-color: #5f3736;
+}
+
+section.s3 .circle{
+    background-color:  #6e5f67;
+}
+
+section.s4{
+    background-color:#f3f1f2 ;
+}
+
+section.s4 .square{
+    background-color: #d54156;
+}
+
+section.s4 .circle{
+    background-color:  #5982a0;
+}
+
 .content{
     position: relative;
 }
