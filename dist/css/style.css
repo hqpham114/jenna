@@ -17,8 +17,14 @@ header{
     top:36px;
     left:36px;
     z-index: 1;
+    transition: color .5s;
 
 }
+header.white{
+    color:white;
+}
+
+
 
 section{
     background-color: #c8dee0;
@@ -92,4 +98,19 @@ section.s4 .circle{
     bottom:50px;
     right:-50px;
     position: absolute;
+}
+
+.progress{
+height:10px;
+background-color:#333;
+position: fixed;
+top:0;
+left:0;
+width: 0%;
+z-index: 1;
+transition: background-color .5s ;
+}
+
+.progress.white{
+background-color: white;
 }
